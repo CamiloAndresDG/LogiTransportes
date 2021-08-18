@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="LogiTransportesPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>co.logitransportes.logic.capaModelador.Personas</class>
+    <class>co.logitransportes.logic.capaModelador.Conductores</class>
+    <class>co.logitransportes.logic.capaModelador.Usuarios</class>
+    <class>co.logitransportes.logic.capaModelador.Vehiculos</class>
+    <class>co.logitransportes.logic.capaModelador.Entregas</class>
+    <class>co.logitransportes.logic.capaModelador.Propietarios</class>
+    <class>co.logitransportes.logic.capaModelador.Clientes</class>
+    <class>co.logitransportes.logic.capaModelador.Cambios</class>
+    <class>co.logitransportes.logic.capaModelador.Satelites</class>
+    <class>co.logitransportes.logic.capaModelador.Licencias</class>
+    <class>co.logitransportes.logic.capaModelador.Trabajadores</class>
+    <class>co.logitransportes.logic.capaModelador.Administrativos</class>
+    <class>co.logitransportes.logic.capaModelador.Empresas</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3300/logicdb?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
